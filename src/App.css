@@ -40,54 +40,6 @@ body {
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.search-bar {
-  width: 100%;
-  background-color: white;
-  border-bottom: black 1px solid;
-  display: flex;
-  box-shadow: 0px 0px 15px rgba(70, 69, 69, 0.801);
-  margin-bottom: 30px;
-}
-
-.search-bar__content {
-  margin: auto;
-  flex-basis: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.search-bar__title {
-  max-height: 110px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.search-bar__title-bar {
-  flex-basis: 100%;
-  border-bottom: 1px solid rgba(70, 69, 69, 0.801);
-}
-
-.search-bar__form {
-  flex-basis: 70%;
-}
-
-.search-bar__controls {
-  display: flex;
-  width: 100%;
-}
-
-.search-bar__control {
-  flex-basis: 25%;
-  border: none;
-  height: 3rem;
-  padding: 10px;
-}
-
-.search-bar__vr {
-  border-left: 1px rgb(179, 174, 174) solid;
-}
-
 .card-view {
   justify-content: space-evenly;
   display: flex;
@@ -96,7 +48,7 @@ body {
 }
 
 .card-view--loading {
-  height: 100vh;
+  height: 75vh;
 }
 
 .card-view__loading-spinner {
@@ -177,7 +129,7 @@ body {
 }
 
 .date-card__content {
-  box-shadow: 0 0 80px rgba(0,0,0,0.55);
+  box-shadow: 0 0 40px rgba(0, 4, 20, 0.397);
   border-radius: 5px;
   width: 95%;
   margin: auto;
@@ -218,6 +170,12 @@ body {
   background-color: white;
   color: rgba(2, 2, 44, 0.808);
   transition: all 0.2s ease-in-out;
+}
+
+.page-card__button {
+  background: transparent;
+  width: 100%;
+  border: none;
 }
 
 .page-card__content:hover {

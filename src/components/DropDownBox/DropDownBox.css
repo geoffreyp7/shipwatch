@@ -1,0 +1,27 @@
+.drop-down-box {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.drop-down-box__item {
+    height: 50px;
+    border-bottom: 1px solid darkgray;
+    display: flex;
+}
+
+.drop-down-box__item:hover {
+    background-color: lightblue;
+}
+
+.item__content {
+    align-self: center;
+    margin: auto;
+}
+
+.invisible-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+}
