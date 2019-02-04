@@ -9,8 +9,9 @@ export default function DateCard({ date }) {
     <div className="card date-card">
       <div className="date-card__content">
         <div>
+          <h4 className="date-card__heading">{date.format('dddd')}</h4>
           <h4 className="date-card__calendar"><FontAwesomeIcon icon={faCalendarAlt} /></h4>
-          <h4 className="date-card__heading">{date}</h4>
+          <h4 className="date-card__heading">{date.format('Do MMMM')}</h4>
         </div>
       </div>
     </div>

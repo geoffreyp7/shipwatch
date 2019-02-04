@@ -7,21 +7,47 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      temp: '',
+      filter: {
+        startDate: null,
+        endDate: null,
+        minWeight: null,
+        maxWeight: null,
+      },
     };
-    let { temp } = this.state;
-    temp = 4;
-    if (temp === 4) {
-      temp = 3;
-    }
+  }
+
+  componentDidMount() {
+    document.title = 'Newy Ship Guide Shipping Schedule';
+  }
+
+  filterShips(startDate, endDate, minWeight, maxWeight) {
+    const filter = {
+      startDate,
+      endDate,
+      minWeight,
+      maxWeight,
+    };
+    this.setState({
+      filter,
+    }, () => console.log(filter));
   }
 
   render() {
+    const { filter } = this.state;
+
     return (
       <div className="App">
         <div>
-          <TitleBar />
-          <ShipView />
+          <TitleBar onFilter={
+            (startDate, endDate, minWeight, maxWeight) => {
+              this.filterShips(startDate, endDate, minWeight, maxWeight);
+            }
+           }
+          />
+          {console.log(filter)}
+          <ShipView
+            filter={filter}
+          />
         </div>
       </div>
     );

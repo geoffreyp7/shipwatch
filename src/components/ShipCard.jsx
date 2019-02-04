@@ -30,12 +30,12 @@ export default function ShipCard({ ship, current }) {
         <p className="ship-card__text ship-card__text--left">
           <FontAwesomeIcon icon={faCalendarAlt} />
           {' '}
-          {ship.date}
+          {ship.dateTime.format('ddd Do MMM')}
         </p>
         <p className="ship-card__text ship-card__text--right">
           <FontAwesomeIcon icon={faClock} />
           {' '}
-          {ship.time}
+          {ship.dateTime.format('h:mmA')}
         </p>
         <div>
           <img

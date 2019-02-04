@@ -201,7 +201,7 @@ body {
   margin: 0px;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 550px) {
 
   .card-view {
     width: 95%;
@@ -227,7 +227,7 @@ body {
 
 }
 
-@media(min-width: 768px) {
+@media(min-width: 880px) {
 
   .card-view {
     width: 90%;
