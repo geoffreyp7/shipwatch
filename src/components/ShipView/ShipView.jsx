@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import '../App.css';
+import './ShipView.css';
 import $ from 'jquery';
 import { ClipLoader } from 'react-spinners';
 import * as moment from 'moment';
 import PropTypes from 'prop-types';
-import DateCard from './DateCard';
-import PageCard from './PageCard';
-import ShipCard from './ShipCard';
+import DateCard from '../Cards/DateCard/DateCard';
+import PageCard from '../Cards/PageCard/PageCard';
+import ShipCard from '../Cards/ShipCard/ShipCard';
 
 export default class ShipView extends Component {
   static isBottom(el) {

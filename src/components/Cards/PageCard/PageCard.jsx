@@ -1,4 +1,5 @@
-import '../App.css';
+import './PageCard.css';
+import '../Card.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';

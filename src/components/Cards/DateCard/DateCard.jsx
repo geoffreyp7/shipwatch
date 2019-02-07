@@ -1,5 +1,6 @@
 import React from 'react';
-import '../App.css';
+import './DateCard.css';
+import '../Card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { PropTypes } from 'prop-types';

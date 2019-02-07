@@ -1,0 +1,53 @@
+.berth-information-panel__text {
+    flex-basis: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.berth-information-panel__hr {
+width: 80%;
+/* border-top: 1px solid lightgray; */
+border: none;
+color: rgb(179, 174, 174);
+background-color: rgb(179, 174, 174);
+height: 1px;
+margin-top: 0px;
+margin-bottom: 5px;
+}
+
+.berth-information-panel__text-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.berth-information-panel__berth-heading {
+    flex-basis: 100%;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.berth-information-panel__li {
+    text-align: left;
+    list-style-type: disc;
+}
+
+.berth-information-panel__ul {
+    margin: auto;
+    padding: 0px;
+}
+
+.berth-information-panel__close-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+
+.berth-information-panel__close-icon {
+    color: white;
+    font-size: 1rem;
+}

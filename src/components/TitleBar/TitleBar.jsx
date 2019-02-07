@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEllipsisH,
+  faTimes,
+} from '@fortawesome/free-solid-svg-icons';
 import * as moment from 'moment';
 import PropTypes from 'prop-types';
 import DropDownBox from '../DropDownBox/DropDownBox';
@@ -83,7 +86,7 @@ export default class TitleBar extends Component {
 
   render() {
     const weightSelectionItems = [];
-    for (let i = 0; i < 16; i += 1) {
+    for (let i = 1; i < 16; i += 1) {
       const weight = i * 10000;
       weightSelectionItems.push(`${weight.toLocaleString()} Tons`);
     }
@@ -136,6 +139,54 @@ export default class TitleBar extends Component {
       );
     }
 
+    const startDateClearButton = (startDate === '')
+      ? null
+      : (
+        <button
+          type="button"
+          onClick={() => this.chooseStartDate('')}
+          className="control__clear-button"
+        >
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
+      );
+
+    const endDateClearButton = (endDate === '')
+      ? null
+      : (
+        <button
+          type="button"
+          onClick={() => this.chooseEndDate('')}
+          className="control__clear-button"
+        >
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
+      );
+
+    const minWeightClearButton = (minWeight === '')
+      ? null
+      : (
+        <button
+          type="button"
+          onClick={() => this.chooseMinWeight('')}
+          className="control__clear-button"
+        >
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
+      );
+
+    const maxWeightClearButton = (maxWeight === '')
+      ? null
+      : (
+        <button
+          type="button"
+          onClick={() => this.chooseMaxWeight('')}
+          className="control__clear-button"
+        >
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
+      );
+
     return (
       <div className="container">
         <div className="title-bar">
@@ -163,6 +214,7 @@ export default class TitleBar extends Component {
                     type="text"
                     readOnly
                   />
+                  {startDateClearButton}
                   {selectionMenus[0]}
                 </div>
                 <div className="title-bar__vr" />
@@ -175,6 +227,7 @@ export default class TitleBar extends Component {
                     type="text"
                     readOnly
                   />
+                  {endDateClearButton}
                   {selectionMenus[1]}
                 </div>
                 <div className="title-bar__vr" />
@@ -187,6 +240,7 @@ export default class TitleBar extends Component {
                     type="text"
                     readOnly
                   />
+                  {minWeightClearButton}
                   {selectionMenus[2]}
                 </div>
                 <div className="title-bar__vr" />
@@ -199,6 +253,7 @@ export default class TitleBar extends Component {
                     type="text"
                     readOnly
                   />
+                  {maxWeightClearButton}
                   {selectionMenus[3]}
                 </div>
               </div>

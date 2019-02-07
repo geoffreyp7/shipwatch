@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ShipView from './components/ShipView';
+import ShipView from './components/ShipView/ShipView';
 import TitleBar from './components/TitleBar/TitleBar';
 
 class App extends Component {

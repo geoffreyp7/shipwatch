@@ -1,28 +1,31 @@
 .drop-down-box {
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-    z-index: 1000;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  z-index: 1000;
 }
 
 .drop-down-box__item {
-    height: 50px;
-    border-bottom: 1px solid darkgray;
-    display: flex;
+  height: 50px;
+  border-bottom: 1px solid darkgray;
+  display: flex;
 }
 
 .drop-down-box__item:hover {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .item__content {
-    align-self: center;
-    margin: auto;
+  align-self: center;
+  width: 100%;
 }
 
 .invisible-button {
-    background-color: transparent;
-    border: none;
-    font-size: 1rem;
-    font-family: inherit;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  text-align: center;
 }

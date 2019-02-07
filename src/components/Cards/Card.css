@@ -1,0 +1,41 @@
+.card {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+  
+  @media(min-width: 550px) {
+
+    .card {
+      flex-basis: 50%;
+      margin-top: 20px;
+    }
+  
+  }
+  
+  @media(min-width: 880px) {
+  
+    .card {
+      flex-basis: 33.333%;
+      margin-top: 20px;
+    }
+  
+  }
+  
+  @media(min-width: 1300px) {
+  
+    .card {
+      flex-basis: 25%;
+      margin-top: 20px;
+    }
+  
+  }
+  
+  @media(min-width: 1800px) {
+  
+    .card {
+      flex-basis: 20%;
+      margin-top: 20px;
+    }
+  
+  }
+  

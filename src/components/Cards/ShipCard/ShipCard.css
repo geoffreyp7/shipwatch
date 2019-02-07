@@ -1,0 +1,108 @@
+
+.ship-card__text {
+    flex-basis: 100%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  
+  .ship-card__text--left {
+    flex-basis: 50%;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .ship-card__text--right {
+    flex-basis: 50%;
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  .ship-card__content {
+    /* border: 1px solid darkgray; */
+    box-shadow: 0 0 40px rgba(0, 4, 20, 0.397);
+    position: relative;
+    border-radius: 5px;
+    width: 95%;
+    margin: auto;
+    padding: 0px;
+    height: 100%;
+    transition: all .2s ease-in-out;
+    background-color: white;
+    color: rgba(2, 2, 44, 0.808);
+    z-index: 0;
+  }
+
+  .ship-card__ship-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ship-card__ship-information--blur {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+  }
+  
+  .ship-card__content:hover {
+    transform: scale(1.05);
+  }
+  
+  .ship-card__hr {
+    width: 80%;
+    /* border-top: 1px solid lightgray; */
+    border: none;
+    color: rgb(179, 174, 174);
+    background-color: rgb(179, 174, 174);
+    height: 1px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+  
+  .ship-card__heading {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    flex-basis: 100%;
+    color: rgba(3, 3, 61, 0.801);
+  }
+  
+  .ship-card__heading--current {
+    color: rgba(167, 7, 7, 0.842)
+  }
+  
+  .ship-card__img {
+    width: 100%;
+  }
+
+  .ship-card__berth-info-icon {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .ship-card__berth-info-button {
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+  }
+
+  .ship-card__berth-information {
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 5px;
+    z-index: 10;
+    color: white;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .ship-card__berth-information--hidden {
+    display: none;
+  }
+

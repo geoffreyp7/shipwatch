@@ -1,0 +1,45 @@
+.page-card__content {
+    box-shadow: 0 0 80px rgba(0,0,0,0.55);
+    border-radius: 5px;
+    width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    background-color: white;
+    color: rgba(2, 2, 44, 0.808);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .page-card__button {
+    background: transparent;
+    width: 100%;
+    border: none;
+  }
+  
+  .page-card__content:hover {
+    transform: scale(1.05);
+  }
+  
+  .page-card__heading {
+    font-size: 1.5rem;
+    margin: 0px;
+    flex-basis: 100%;
+    padding-top: 5px;
+  }
+  
+  .page-card__ellipsis {
+    font-size: 2.8rem;
+    margin: 0px;
+    flex-basis: 100%;
+    padding-top: 5px;
+  }
+  
+  .page-card__calendar {
+    font-size: 5rem;
+    margin: 0px;
+  }
+  

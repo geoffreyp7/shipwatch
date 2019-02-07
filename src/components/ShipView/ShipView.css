@@ -1,0 +1,51 @@
+.card-view {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  
+  .card-view--loading {
+    height: 75vh;
+  }
+  
+  .card-view__loading-spinner {
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    align-self: center;
+    border-color: red;
+  }
+
+  @media(min-width: 550px) {
+
+    .card-view {
+      width: 95%;
+    }
+  
+  }
+  
+  @media(min-width: 880px) {
+  
+    .card-view {
+      width: 90%;
+    }
+  
+  }
+  
+  @media(min-width: 1300px) {
+  
+    .card-view {
+      width: 85%;
+    }
+  
+  }
+  
+  @media(min-width: 1800px) {
+  
+    .card-view {
+      width: 80%;
+    }
+  
+  }
+  
