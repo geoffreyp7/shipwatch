@@ -16,10 +16,6 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    document.title = 'Newy Ship Guide Shipping Schedule';
-  }
-
   filterShips(startDate, endDate, minWeight, maxWeight) {
     const filter = {
       startDate,

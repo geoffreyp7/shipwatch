@@ -24,7 +24,10 @@ export default function BerthInformationPanel(props) {
         onClick={() => onClose()}
         className="berth-information-panel__close-button"
       >
-        <FontAwesomeIcon className="berth-information-panel__close-icon" icon={faTimes} />
+        <FontAwesomeIcon
+          className="berth-information-panel__close-icon"
+          icon={faTimes}
+        />
       </button>
       <h4 className="berth-information-panel__berth-heading">Berth Information</h4>
       <hr className="berth-information-panel__hr" />
