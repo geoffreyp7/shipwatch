@@ -54,10 +54,6 @@
     display: flex;
   }
   
-  .title-bar__form {
-
-  }
-  
   .title-bar__controls {
     display: flex;
     width: 100%;
@@ -142,9 +138,6 @@
   abbr {
     text-decoration: none;
   }
-
-  .title-bar__open-selection {
-}
 
 @media(min-width: 286px) {
   .title-bar__selection {

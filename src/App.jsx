@@ -25,7 +25,7 @@ class App extends Component {
     };
     this.setState({
       filter,
-    }, () => console.log(filter));
+    });
   }
 
   render() {
@@ -40,7 +40,6 @@ class App extends Component {
             }
            }
           />
-          {console.log(filter)}
           <ShipView
             filter={filter}
           />

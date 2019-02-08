@@ -25,18 +25,10 @@ export default class ShipView extends Component {
     const minWeight = !mw ? Number.NEGATIVE_INFINITY : mw;
     const maxWeight = !maw ? Number.POSITIVE_INFINITY : maw;
 
-    const filteredShips = [];
-    for (let i = 0; i < ships.length; i += 1) {
-      if (
-        ships[i].GRT >= minWeight
-        && ships[i].GRT <= maxWeight
-        && ships[i].dateTime.isSameOrAfter(startDate, 'day')
-        && ships[i].dateTime.isSameOrBefore(endDate, 'day')
-      ) {
-        filteredShips.push(ships[i]);
-      }
-    }
-    return filteredShips;
+    return ships.filter(s => s.GRT >= minWeight
+      && s.GRT <= maxWeight
+      && s.dateTime.isSameOrAfter(startDate, 'day')
+      && s.dateTime.isSameOrBefore(endDate, 'day'));
   }
 
   static getShipCards(ships) {
@@ -95,7 +87,6 @@ export default class ShipView extends Component {
       maxWeight,
     } = filter;
 
-    console.log(filter);
     const startDateMoment = startDate ? moment(startDate, 'DD/MM/YYYY') : null;
     const endDateMoment = endDate ? moment(endDate, 'DD/MM/YYYY') : null;
 
@@ -132,7 +123,7 @@ export default class ShipView extends Component {
         const tableHTML = domNodes.find('table').prop('outerHTML');
         this.setShips(tableHTML);
       },
-    );
+    ).fail(() => this.getShipData());
   }
 
   setShips(data) {
